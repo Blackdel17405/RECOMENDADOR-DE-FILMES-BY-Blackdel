@@ -34,17 +34,24 @@ function draw() {
   text(recomendacao, width / 2, height / 2);
 }
 
-function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura){
+function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura, gostaDeRomance){
   if (idade >= 16) {
     if(idade >= 18) {
       return "Cidade de Deus"
     } else {
       if (idade >= 14){
-        if (gostaDeFantasia || gostaDeAventura) {
-          return "Deadpool"
+        if (gostaDeFantasia || gostaDeAventura ) {
+          return "Deadpool";
         } else {
-          return "Enola Holmes"
-        }
+          return "Enola Holmes";
+
+        if (gostaDeRomance) {
+            return "Para todo os garotos que já amei";
+          }
+            return "Para todos os garotos que já amei";
+
+          }
+        
       }else {
         if (idade >=14) {
             return "homem aranha no aranha  verso"
